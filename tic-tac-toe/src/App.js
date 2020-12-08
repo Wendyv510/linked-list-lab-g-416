@@ -5,16 +5,19 @@ class App extends Component {
   constructor(props){
     super(props)
     this.state = {
-      board: ["","","","","","","","",""]
+      board: ["X","","","O","","","","X",""]
     }
   }
   render(){
   return (
     <div className="App">
       <header className="App-header">
-        <img src="https://i.pinimg.com/originals/5a/41/af/5a41afc9aea3e975da2533e41f823419.png" className="App-logo" alt="logo" />
-        
+        Tic Tac Toe 
       </header>
+    <div className="Board">
+      {this.state.board.map((cell) =>
+        <p>{cell}</p> )}
+    </div>
     </div>
   );
 }
