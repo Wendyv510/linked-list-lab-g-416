@@ -5,7 +5,7 @@ class App extends Component {
   constructor(props){
     super(props)
     this.state = {
-      board: ["X","","","O","","","","X",""]
+      board: ["","","","","","","","",""]
     }
   }
   render(){
@@ -14,9 +14,9 @@ class App extends Component {
       <header className="App-header">
         Tic-Tac-Toe 
       </header>
-    <div className="Board">
+    <div id="board">
       {this.state.board.map((cell) =>
-        <p>{cell}</p> )}
+        <p className="cell">{cell}</p> )}
     </div>
     </div>
   );
