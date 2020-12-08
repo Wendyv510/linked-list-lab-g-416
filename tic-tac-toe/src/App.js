@@ -12,7 +12,7 @@ class App extends Component {
   return (
     <div className="App">
       <header className="App-header">
-        Tic Tac Toe 
+        Tic-Tac-Toe 
       </header>
     <div className="Board">
       {this.state.board.map((cell) =>
